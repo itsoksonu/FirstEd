@@ -1,5 +1,5 @@
 // build.js
-const execSync = require('child_process').execSync;
+import { execSync } from 'child_process';
 
 // Your build commands
 try {
