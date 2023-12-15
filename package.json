@@ -7,6 +7,7 @@
   "scripts": {
     "start": "node App.js",
     "build": "node build.js",
+    "compile": "tcs"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
