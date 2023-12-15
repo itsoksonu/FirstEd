@@ -1,16 +1,12 @@
 {
-  "scripts": {
-    "start": "node App.js",
-    "build": "npm run build"
-  },
-
-{
   "name": "engineer-bro",
   "version": "1.0.0",
   "description": "",
   "main": "App.js",
   "type": "module",
   "scripts": {
+    "start": "node App.js",
+    "build": "your-build-command-here",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -24,3 +20,4 @@
     "multer": "^1.4.5-lts.1"
   }
 }
+
