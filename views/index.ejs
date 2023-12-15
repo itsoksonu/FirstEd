@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FirstEd - Online Learning Program </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    	<meta name="description" content="Bikaner Technical University (BTU), Bikaner, Ajmer, Rajasthan, Here you can see BTU Syllabus Notes, BTU Previous Year Papers">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="keywords" content="btu Rajasthan, btu results, btu syllabus, btu question paper, aku bihar b tech syllabus, btu b tech notes, engineering notes."/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+       
+        <link rel="stylesheet" href="styles.css">
+       
+        <script src="script.js"></script>
+    </head>
+    <header>
+      <div class="logo">
+       <a href="/"><img src="images/logo.png" alt="Engineer Bro Logo"></a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Notes <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+              <a href="/Computer_Science_Engineering_Notes">Computer Science & Engineering</a>
+              <a href="/Electrical_Engineering_Notes">Electrical Engineering</a>
+              <a href="/Civil_Engineering_Notes">Civil Engineering</a>
+              <a href="/Mechanical_Engineering_Notes">Mechanical Engineering</a>
+              <a href="/Electronic_Communication_Engineering_Notes">Electronics & Communication Engineering</a>
+              <a href="/Information_Technology_Notes">Information Technology</a>
+              <a href="/Computer_Science_Engineering_Cyber_Security_Notes">Computer Science & Engineering (Cyber Security)</a>
+              <a href="/Electronics_Instrumentation_Engineering_Notes">Electronics & Instrumentation Engineering</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Previous Year Paper <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-content">
+              <a href="/Computer_Science_Engineering">Computer Science & Engineering</a>
+              <a href="/Electrical_Engineering">Electrical Engineering</a>
+              <a href="/Civil_Engineering">Civil Engineering</a>
+              <a href="/Mechanical_Engineering">Mechanical Engineering</a>
+              <a href="/Electronic_Communication_Engineering">Electronics & Communication Engineering</a>
+              <a href="/Information_Technology">Information Technology</a>
+              <a href="/Computer_Science_Engineering_Cyber_Security">Computer Science & Engineering (Cyber Security)</a>
+              <a href="/Electronics_Instrumentation_Engineering">Electronics & Instrumentation Engineering</a>
+            </div>
+          </li>
+          <li><a href="/about" id="about-link">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger-menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>    
+    </header>
+    
+<%if(locals.message){%>
+  <div class="uploaded" id="upload-success">
+    <strong><%= message %></strong>
+  </div>    
+<% } %>
+
+          <section class="text-gray-500 bg-gray-900 body-font">
+            <div class="container mx-auto flex px-5 py-24 mt-0 md:flex-row flex-col items-center border-b-2 border-gray-800">
+              <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center ">
+            
+                <h3 class="mb-8">Welcome to FirstEd 🧑‍💻</h3>
+                <p>
+                  FirstEd is a comprehensive online platform designed to provide a valuable resource for college students pursuing engineering degrees. Whether you're studying Computer, IT, Civil, Mechanical, Electrical, or Chemical Engineering, FirstEd is here to support you on your academic journey.
+                </p>
+                <br>
+                <p>
+                  Our mission is to bridge the gap between students and quality educational materials. We understand the challenges faced by engineering students when it comes to finding reliable study resources and notes. That's why we've created FirstEd, a one-stop solution to access a wide range of college notes and exam papers.
+                </p>
+             <!--   <div class="flex justify-center">
+                  <a href="index.html" class=" btn inline-flex text-white bg-indigo-500 border-0 pb-0 px-6 pb-2 focus:outline-none hover:bg-indigo-600 rounded text-lg align-center"  > Explore </a>
+                </div>-->       
+              </div>
+              <div class=" lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded img-fluid w-70 h-70" alt="hero" src="images/hire_dedicated_banner.svg">
+              </div>
+            </div>
+          </section>
+          
+          <section id="notes" class="text-gray-400 bg-gray-900 body-font">
+            <div class="container px-4 py-16 mt-0 mx-auto">
+              <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white"> Class Notes</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Here you can get all type of class notes and pdf notes of all branches and semesters. You can also help the other students in their study by uploading your notes below.
+                </p>
+              </div>
+              <div class="flex flex-wrap -m-2">
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/Computer Science & Engineering.jpg">
+                    <div class="flex-grow">
+                      <h3 class="text-white title-font font-large">Computer Science & Engineering</h3>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Computer_Science_Engineering_Notes">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/Electrical Engineering.jpg">
+                    <div class="flex-grow">
+                      <h3 class="text-white title-font font-large">Electrical Engineering</h3>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Electrical_Engineering_Notes">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg ">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/Civil Engineering.jpg">
+                    <div class="flex-grow">
+                      <h3 class="text-white title-font font-large ">Civil Engineering</h3>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Civil_Engineering_Notes">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/Mechanical Engineering.jpg">
+                    <div class="flex-grow">
+                      <h3 class="text-white title-font font-large ">Mechanical Engineering</h3>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Civil_Engineering_Notes">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/Electronics & Communication Engineering.jpg">
+                    <div class="flex-grow">
+                      <h3 class="text-white title-font font-large ">Electronics & Communication Engineering</h3>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Electronics_Communication_Engineering_Notes">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/Information Technology.jpg">
+                    <div class="flex-grow">
+                      <h3 class="text-white title-font font-large ">Information Technology</h3>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Information_Technology_Notes">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/Computer Science & Engineering (Cyber Security).jpg">
+                    <div class="flex-grow">
+                      <h3 class="text-white title-font font-large ">Computer Science & Engineering (Cyber Security)</h3>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Computer_Science_Engineering_Cyber_Security_Notes">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/Electronics & Instrumentation Engineering.png">
+                    <div class="flex-grow">
+                      <h3 class="text-white title-font font-large ">Electronics & Instrumentation Engineering</h3>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Electronics_Instrumentation_Engineering_Notes">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+             <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/important.png">
+                    <div class="flex-grow">
+                      <h2 class="text-white title-font font-large ">Impotrant Study Links</h2>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Impotrant_Study_Links">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </section>
+         
+          <section id="papers" class="text-gray-400 bg-gray-900 body-font">
+            <div class="container px-4 py-24 mt-0 mx-auto">
+              <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">BTU Previous Year Question Paper</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Previous Year Question Paper of B.tech for all branch is given here which is taken by BTU(Bikaner Technical University)
+                </p>
+              </div>
+              <div class="flex flex-wrap -m-2">
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/Computer Science & Engineering.jpg">
+                    <div class="flex-grow">
+                      <h3 class="text-white title-font font-large">Computer Science & Engineering</h3>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Computer_Science_Engineering">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/Electrical Engineering.jpg">
+                    <div class="flex-grow">
+                      <h3 class="text-white title-font font-large">Electrical Engineering</h3>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Electrical_Engineering">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/Civil Engineering.jpg">
+                    <div class="flex-grow">
+                      <h3 class="text-white title-font font-large ">Civil Engineering</h3>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Civil_Engineering">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/Mechanical Engineering.jpg">
+                    <div class="flex-grow">
+                      <h3 class="text-white title-font font-large ">Mechanical Engineering</h3>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Mechanical_Engineering">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/Electronics & Communication Engineering.jpg">
+                    <div class="flex-grow">
+                      <h3 class="text-white title-font font-large ">Electronics & Communication Engineering</h3>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Electronics_Communication_Engineering">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/Information Technology.jpg">
+                    <div class="flex-grow">
+                      <h3 class="text-white title-font font-large ">Information Technology</h3>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Information_Technology">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/Computer Science & Engineering (Cyber Security).jpg">
+                    <div class="flex-grow">
+                      <h3 class="text-white title-font font-large ">Computer Science & Engineering (Cyber Security)</h3>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Computer_Science_Engineering_Cyber_Security">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroComputer Science & Engineering (Cyber Security)ke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                  <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                    <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="images/Electronics & Instrumentation Engineering.png">
+                    <div class="flex-grow">
+                      <h3 class="text-white title-font font-large ">Electronics & Instrumentation Engineering</h3>
+                      <a class="mt-3 inline-flex items-center text-decoration-none hover:text-gray-600" href="/Electronics_Instrumentation_Engineering">Download
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                          <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+          </section>
+
+          <section class="text-gray-400 bg-gray-900 body-font section-footer">
+            <div class="container px-4 py-24 mt-0 mx-auto">
+              <div class="flex flex-col text-center w-full mb-0">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Upload Your Notes & Exam Paper</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Time to give your notes some wings! Upload them here and watch them soar to new heights of knowledge. Let's unleash the power of your words!</p>
+                <form action="/submit_file" method="post" enctype="multipart/form-data" class="upload">
+                  <input type="file" name="notesFile" id="notesFile" class="w-full input-field">
+                  <input type="text" name="title" placeholder="Title" class="w-full input-field">
+                  <textarea name="description" placeholder="Description" class="w-full input-field"></textarea>
+                  <input type="submit" value="Upload" class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 cursor-pointer">
+                </form>
+              </div>
+            </div>
+          </section>
+          
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <div class="footerlogo">
+        <a href="/"><img src="images/logo.png" alt="Engineer Bro Logo"></a>
+       </div>         
+      FirstEd is the First Aid to Your Study.
+       <p> Your Hub for Comprehensive Notes, Rich Study Resources, and Insightful Question Papers. Empowering School and College Students on Their Path to Success. </p>
+    </div>
+    <div class="footer-links">
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="#">School</a></li>
+        <li><a href="#">Boards</a></li>
+        <li><a href="#">College</a></li>
+        <li><a href="#">Notes</a></li>
+        <li><a href="#">Previous Year Papers</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h3> Get in Touch</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer-links">
+      <h3>Company</h3>
+      <ul>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2023 FirstEd. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+<div class="return-to-top" id="returnToTop">
+  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-rocket-fill" viewBox="0 0 16 16">
+    <path d="M10.175 1.991c.81 1.312 1.583 3.43 1.778 6.819l1.5 1.83A2.5 2.5 0 0 1 14 12.202V15.5a.5.5 0 0 1-.9.3l-1.125-1.5c-.166-.222-.42-.4-.752-.57-.214-.108-.414-.192-.627-.282l-.196-.083C9.7 13.793 8.85 14 8 14c-.85 0-1.7-.207-2.4-.635-.068.03-.133.057-.198.084-.211.089-.411.173-.625.281-.332.17-.586.348-.752.57L2.9 15.8a.5.5 0 0 1-.9-.3v-3.298a2.5 2.5 0 0 1 .548-1.562l.004-.005L4.049 8.81c.197-3.323.969-5.434 1.774-6.756.466-.767.94-1.262 1.31-1.57a3.67 3.67 0 0 1 .601-.41A.549.549 0 0 1 8 0c.101 0 .17.027.25.064.037.017.086.041.145.075.118.066.277.167.463.315.373.297.85.779 1.317 1.537ZM9.5 6c0-1.105-.672-2-1.5-2s-1.5.895-1.5 2S7.172 8 8 8s1.5-.895 1.5-2Z"/>
+    <path d="M8 14.5c.5 0 .999-.046 1.479-.139L8.4 15.8a.5.5 0 0 1-.8 0l-1.079-1.439c.48.093.98.139 1.479.139Z"/>
+  </svg>
+</div>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const navLinks = document.querySelector(".nav-links");
+    
+        hamburgerMenu.addEventListener("click", function () {
+          navLinks.classList.toggle("active");
+        });
+      });
+
+
+  // Get the reference to the div element
+  var uploadSuccessDiv = document.getElementById('upload-success');
+
+  // Function to hide the div element after 2 seconds
+  function hideUploadSuccess() {
+    uploadSuccessDiv.style.display = 'none';
+  }
+
+  // Set a timeout to call the hideUploadSuccess function after 2 seconds
+  setTimeout(hideUploadSuccess, 2000);
+
+    </script>
+    
+  </body>
+  </html>
+        
