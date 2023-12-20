@@ -5,7 +5,7 @@ import multer from "multer";
 
 const app = express();
 const port = 3000;
-const mongoURL = process.env.MONGO_URL;
+const mongoURL = "mongodb://127.0.0.1:27017/firstEd";
 
 // Connection with mongodb localhost
 mongoose.connect(mongoURL);
